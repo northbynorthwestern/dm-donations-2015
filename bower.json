@@ -1,0 +1,12 @@
+{
+  "name": "dm-donations-2015",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "bourbon": "~4.2.1",
+    "neat": "~1.7.1",
+    "d3": "~3.5.5",
+    "components-font-awesome": "~4.3.0",
+    "font-awesome": "~4.3.0"
+  }
+}

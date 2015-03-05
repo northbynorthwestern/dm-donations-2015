@@ -1,0 +1,65 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(80, 31, 132, 0.05);
+}
+
+p {
+
+}
+
+.prose {
+  @extend %prose;
+  @include sans-serif;
+
+  p {
+    margin-bottom: .75em;
+    margin-top: .75em;
+  }
+
+  h3 {
+    @extend %paragraph-header;
+  }
+
+  &.prose-justified {
+    text-align: justify;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include sans-serif;
+}
+
+
+.content-wrapper {
+  @include outer-container();
+}
+
+.row {
+  @include row();
+}
+
+.content-block {
+  @extend %content-block;
+  margin-bottom: .25em;
+  margin-top: .25em;
+
+  @include media($large) {
+    @include span-columns(8 of 12);
+    @include shift(2);
+  }
+
+  @include media($medium) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+  }
+
+  @include media($small) {
+    @include span-columns(12 of 12);
+  }
+}
